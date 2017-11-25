@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Text Converter Demo</string>
+    <string name="todo">TODO</string>
+    <string name="write_your_text_here">write your text here</string>
+    <string name="result">result</string>
+</resources>
