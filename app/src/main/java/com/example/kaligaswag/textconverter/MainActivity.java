@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         spinner = (Spinner) findViewById(R.id.spinner);
         copy = (ImageView) findViewById(R.id.imageView);
 
-        final String[] spin = {"none", "small char", "crossed char"};
+        final String[] spin = {"select", "small char", "crossed char"};
 
         ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_spinner_item, spin);
         spinner.setAdapter(adapter);
@@ -41,11 +41,11 @@ public class MainActivity extends AppCompatActivity {
                 String in = input.getText().toString();
                 Converter converter = new Converter();
                 switch (spin[position]){
-                    case "huruf kecil":
+                    case "small char":
                        String con = converter.smalltext(in);
                        output.setText(con);
                        break;
-                    case "biasa":
+                    case "select":
                         output.setText(in);
                         break;
                 }
